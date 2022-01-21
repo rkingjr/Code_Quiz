@@ -105,7 +105,8 @@ function goNextQuestion() {
 
 function showNextQuestion(question) {
     questionElement.innerText = questions.question
-    questions.answers.array.forEach(answer  => {
+    answerButtonElement.innerText = questions.answer
+    questions.answers.array.forEach(answer => {
         const button = document.createElement("button")
         button.innerText =  answer.text
         button.classList.add("btn")
@@ -130,13 +131,13 @@ function chooseAnswer(e) {
     const chosenButton = e.target
     const correct =  selectButton.dataset.correct
     setStatusClass(document.body, correct)
-    Array.from(answerButtonElement.children).forEach(button =>  {
+    Array.from(answerButtonElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })
     if (shuffledQuestions.length > currentQuestionsDB + 1) {
         nextButton.classList.remove("hide")
     } else {
-        startButton.innerText = "Restart "
+        startButton.innerText = "Restart"
         startButton.classList.remove("hide")
     }
 }
