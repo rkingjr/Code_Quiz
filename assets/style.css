@@ -55,4 +55,36 @@ li {
     clear: both;
 }
 
+#highscore-list {
+    list-style: none;
+    padding-left: 0px;
+}
 
+.highscore {
+    text-align: left;
+    font-weight: bold;
+    padding: 0.25rem 1rem;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn-maroon {
+    background-color: maroon;
+    border-color: gray;
+    color: white;
+    font-weight: bold;
+    padding: 3px 6px;
+}
+
+.nav-container {
+    position: relative;
+    width: 100%;
+    margin-top: .5rem;
+    font-size: 24px;
+    height: 40px;
+    font-weight: bolder;
+}
+
+.submit-field {
+    text-align: left;
+}
