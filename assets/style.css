@@ -1,85 +1,58 @@
-*, *::before, *::after {
-    box-sizing:border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 18px;
 }
 
-:root {
-    --color-neutral:  240;
-    --color-wrong: 0;
-    --color-correct: 145;
+hr {
+    border-top: 1.5px lightblue;
+    color: blue;
+    opacity: 0.8;
 }
 
-body {
-    --color: var(--color-neutral);
-    padding: 0;
-    margin: 0;
-    display: flex;
-    width: 100vw;
-    height: 100vw;
-    align-items: center;
-    justify-content: center;
-    background-color: hsl(var(--color), 100%, 20%);
+h1 {
+    text-align: left;
+    margin-top: 10%;
+    font-weight: bold;
 }
 
-body.correct {
-    --color:  var(--color-correct);
+header h1 {
+    text-align: center;
 }
 
-body.wrong {
-    --color:  var(--color-wrong);
+ul {
+    list-style: none;
 }
 
-.container {
-    width: 800px;
-    max-width: 80%;
-    background-color:  lightgray;
-    border-radius: 5px;
-    padding:10px;
-    box-shadow: 0 0 10px 2px;
+li {
+    text-align: left;
 }
 
-.btn-grid {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 10px;;
-    margin:20px 0;
+#questions {
+    text-align: left;
 }
 
-.btn {
-    --color: var(--color-neutral);
-    background-color: hsl(var(--color), 100%, 50%);
-    border: 1px solid hsl(var(--color), 100%, 30%);
-    border-radius: 5px;
-    padding: 5px 10px;
-    color: white;
-    outline: none;
+#questions h1 {
+    text-align: left;
+    font-size: 30px;
 }
 
-.btn:hover {
-    border-color: black ;
+#highscores {
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    clear: both;
+    color: royalblue;
 }
 
-.btn.correct {
-    --color: var(--color-correct);
-    color: black ;
+#timer {
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    clear: both;
 }
 
-.btn.wrong {
-    --color: var(--color-wrong);
-}
 
-.start-btn .next-btn {
-    font-size: 2rem;
-    font-style: bold;
-    padding: 10px 20px;
-}
-
-.controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hide {
-    display: none  ;
-}
