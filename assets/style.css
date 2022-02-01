@@ -1,90 +1,85 @@
-* {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+*, *::before, *::after {
     box-sizing: border-box;
-    text-align: center;
-    font-size: 18px;
+    font-family: Gotham Rounded;
 }
 
-hr {
-    border-top: 1.5px lightblue;
-    color: blue;
-    opacity: 0.8;
+:root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
 }
 
-h1 {
-    text-align: left;
-    margin-top: 10%;
-    font-weight: bold;
+body {
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(var(--hue), 100%, 20%);
 }
 
-header h1 {
-    text-align: center;
+body.correct {
+    --hue: var(--hue-correct);
 }
 
-ul {
-    list-style: none;
+body.wrong {
+    --hue: var(--hue-wrong);
 }
 
-li {
-    text-align: left;
-}
-
-#questions {
-    text-align: left;
-}
-
-#questions h1 {
-    text-align: left;
-    font-size: 30px;
-}
-
-#highscores {
-    float: left;
-    position: absolute;
-    top: 0;
-    left: 1rem;
-    clear: both;
-    color: royalblue;
-}
-
-#timer {
-    float: right;
-    position: absolute;
-    top: 0;
-    right: 1rem;
-    clear: both;
-}
-
-#highscore-list {
-    list-style: none;
-    padding-left: 0px;
-}
-
-.highscore {
-    text-align: left;
-    font-weight: bold;
-    padding: 0.25rem 1rem;
-    color: white;
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
     border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
 }
 
-.btn-maroon {
-    background-color: maroon;
-    border-color: gray;
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    --hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 5px;
+    padding: 5px 10px;
     color: white;
+    outline: none;
+}
+
+.btn:hover {
+    border-color: black;
+}
+
+.btn.correct {
+    --hue: var(--hue-correct);
+    color: black;
+}
+
+.btn.wrong {
+    --hue: var(--hue-wrong);
+}
+
+.start-btn, .next-btn {
+    font-size: 1.5rem;
     font-weight: bold;
-    padding: 3px 6px;
+    padding: 10px 20px;
 }
 
-.nav-container {
-    position: relative;
-    width: 100%;
-    margin-top: .5rem;
-    font-size: 24px;
-    height: 40px;
-    font-weight: bolder;
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.submit-field {
-    text-align: left;
-}
+.hide {
+    display: none;
+  }

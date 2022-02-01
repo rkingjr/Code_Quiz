@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web API Quiz!</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script rel="stylesheet" href="assets/style.css"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./assets/style.css" rel="stylesheet">
+    <script defer src="./assets/script.js"></script>
+    <title>Coding Quiz</title>
 </head>
-<body>
-    <div class="nav-container">
-        <span id="highscores">View highscores</span>
-        <span id="timer">Time Left: 0</span>
-    </div>
 
+<body>
     <div class="container">
-        <div class="row">
-            <div class="col-sm3"></div>
-            <div id="content" class="col-sm-6"></div>
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
         </div>
     </div>
-
-
-    <script src="./assets/script.js"></script>
-
 </body>
+
 </html>
