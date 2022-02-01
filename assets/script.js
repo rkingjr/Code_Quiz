@@ -83,7 +83,7 @@ const questions = [
             { text: "Creating HTML elements.", correct: false },
             { text: "Changing HTML content and attributes.", correct: false },
             { text: "Timer functions with setTimeout and setInterval.", correct: true },
-            { text: " Binding listeners to execute a function upon a certain event. ", correct: false }
+            { text: "Binding listeners to execute a function upon a certain event. ", correct: false }
         ]
     },
     {
@@ -118,7 +118,7 @@ const questions = [
         answers: [
             { text: "Random Famous Quotes API.", correct: false },
             { text: "The Cocktail DB API.", correct: false },
-            { text: "TPokeAPI.", correct: true },
+            { text: "PokeAPI.", correct: true },
             { text: "Shazam API.", correct: false }
         ]
     }
