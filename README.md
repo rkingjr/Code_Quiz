@@ -8,7 +8,7 @@
 
 # Screenshot
 
-![Screencastify of running application.](./assets/Coding Quiz.gif)
+![Scrrencastify of running application](./assets/Coding_Quiz.gif)
 
 # Deployed Application
 
